@@ -1,3 +1,8 @@
+# Client files
+botbot/data/data.sqlite
+botbot/logs
+
+
 *.py[cod]
 
 # C extensions
