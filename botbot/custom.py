@@ -18,7 +18,6 @@ from conf import (DB_FILE,
 from debug import debug
 
 
-HTML_PARSER = html.parser.HTMLParser()
 
 
 def list_help(r, line, bot, chan):
@@ -89,7 +88,7 @@ def title_echo(r, line, bot, chan):
         title = title.group(1).strip()
         title = title.replace('\n', '').replace('\r', '')
         title = ' '.join([w for w in title.split(' ') if w != ''])
-        title = HTML_PARSER.unescape(title)
+        title = html.parser.HTMLParser().unescape(title)
     else:
         write_url(None, url)
         return
