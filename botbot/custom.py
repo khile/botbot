@@ -18,8 +18,6 @@ from conf import (DB_FILE,
 from debug import debug
 
 
-
-
 def list_help(r, line, bot, chan):
     """List the custom commands via PM"""
     param = None
