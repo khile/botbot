@@ -2,7 +2,7 @@
 import os
 import time
 
-from multiprocessing import Process, RLock
+from multiprocessing import Process
 
 
 LOG_FILE = os.path.join(os.path.dirname(__file__), 'logs/log.log')
