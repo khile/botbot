@@ -2,7 +2,6 @@
 """botbot is a bot with customizable behavior."""
 import difflib
 import re
-import subprocess
 import sys
 import time
 import traceback
