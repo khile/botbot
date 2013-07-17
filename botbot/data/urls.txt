@@ -1,0 +1,4 @@
+!urls [n]
+    This prints the n most recent urls, with their titles,
+    posted in the channel. The default value of n is 5.
+    A maximum 25 results are returned.

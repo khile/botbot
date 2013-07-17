@@ -1,0 +1,11 @@
+For detailed help use !help [command]
+    [] - optional parameter
+    <> - required parameter
+
+-Command-                           -Description-
+!help ............................. List available commands.
+!lstell ........................... List pending messages.
+!q <query> ........................ Provide a search results link.
+!tell <nick> <message> ............ Leave someone a message.
+!urlq <query> ..................... Search urls.
+!urls [n] ......................... List urls.

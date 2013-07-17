@@ -1,0 +1,3 @@
+!lstell
+    List the users with pending tells. This will display
+    a maximum of 2048 characters.

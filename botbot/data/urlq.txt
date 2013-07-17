@@ -1,0 +1,8 @@
+!urlq <query>
+    List all entries which haves a url that matches,
+    or have a title that matches, the search query.
+    The query also matches substrings and is not case
+    sensitive. The query will be tokenized by splitting
+    on whitespace. This command is limited to the top
+    25 results.
+    Good luck using this :p (to be refined at a later date)

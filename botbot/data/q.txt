@@ -1,0 +1,15 @@
+!q <query>
+    Query the duck duck go search engine. You can include
+    bangs for search redirection.
+    Bang Syntax:
+        In this example we will use the google bang (!g).
+        A list of supported bangs are provided in the link below.
+            These will seach google for the term "hello world":
+                !q !g hello world
+                !q hello world !g
+                !q hello world!g
+            You can replace !g with any other supported bang.
+            This will search for the term "hello world" using
+            DuckDuckGo as the search engine:
+                !q hello world
+    Bang list: https://duckduckgo.com/bang.html

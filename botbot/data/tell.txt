@@ -1,0 +1,10 @@
+!tell <nick> <message>
+    Leave a message for nick. They will receive it the next
+    time they join the channel. The nick parameter is not case
+    sensitive.
+        Examples of tell for a user with nick "AbcD123" with
+        the message "hello world":
+            !tell AbcD123 hello world
+            !tell abcd123 hello world
+            !tell ABCD123 hello world
+            !tell aBCd123 hello world
