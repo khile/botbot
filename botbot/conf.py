@@ -17,7 +17,7 @@ PING_INTERVAL = 30 # seconds
 # server
 SERVER = 'irc.freenode.net'
 PORT = 6667
-CHANNEL = '#bottbotclient'
+CHANNEL = '#botbotclient'
 
 # client name
 USERNAME = 'botbotclient'
