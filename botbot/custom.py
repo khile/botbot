@@ -1,6 +1,6 @@
 """Custom event handlers"""
 import gzip
-import html.parser
+import html.parser as htmlp
 import io
 import os
 import re
@@ -86,7 +86,7 @@ def title_echo(r, line, bot, chan):
         title = title.group(1).strip()
         title = title.replace('\n', '').replace('\r', '')
         title = ' '.join([w for w in title.split(' ') if w != ''])
-        title = html.parser.HTMLParser().unescape(title)
+        title = htmlp.HTMLParser().unescape(title)
     else:
         write_url(None, url)
         return
