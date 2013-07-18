@@ -1,6 +1,6 @@
 # Client files
-botbot/data/data.sqlite
-botbot/logs
+*.sqlite
+*.log
 
 
 *.py[cod]
