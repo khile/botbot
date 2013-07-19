@@ -109,11 +109,7 @@ def tell(r, line, bot, chan):
     conn.commit()
     conn.close()
     message = 'Added {} -> {}: "{}"'.format(sender, r.group(5), msg)
-    reply_main = r.group(4)[0] == '#'
-    if reply_main:
-        bot.write('PRIVMSG {chan} :{msg}\r\n'.format(chan=chan, msg=message))
-    else:
-        bot.write('PRIVMSG {nick} :{msg}\r\n'.format(nick=sender, msg=message))
+    bot.write('PRIVMSG {nick} :{msg}\r\n'.format(nick=sender, msg=message))
 
 def echo_tell(r, line, bot, chan):
     """When the user joins the channel echo their tells via MC"""
