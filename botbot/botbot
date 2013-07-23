@@ -10,6 +10,7 @@ from multiprocessing import Process
 
 from bot import Bot
 from conf import (CHANNEL,
+                  DEBUG,
                   HOSTNAME,
                   PING_INTERVAL,
                   PORT,
@@ -36,7 +37,7 @@ def connect(host, port, chan):
     global B
     global IRC_PARSER
     global CUST_PARSER
-    B = Bot(host, int(port), debug=True)
+    B = Bot(host, int(port), debug=DEBUG)
     IRC_PARSER = Parser(B, chan, IRC_DEFINITIONS)
     CUST_PARSER = Parser(B, chan, CUST_DEFINITIONS)
     B.write('NICK {}\r\n'.format(USERNAME))

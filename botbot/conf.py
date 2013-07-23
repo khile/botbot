@@ -32,6 +32,14 @@ REALNAME = 'botbotclient'
 #
 #-------------------------------------------------------------------------------
 
+# debugging - You should keep this set to False when not debugging the bot.
+#
+# Setting this to True will make all socket reads and writes appear in the
+# terminal. Setting this to False will disable most data displayed to the
+# terminal but the bot will still log exceptions to the log file. Setting this
+# is False also substantially increases the performance of the bot.
+DEBUG = True
+
 # logging
 LOG_FILE = os.path.join(os.path.dirname(__file__), 'logs/log.log')
 
