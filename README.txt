@@ -24,5 +24,6 @@ user can add functionality.
 another for custom utility functions. If you don't want to create another type
 and/or parser, then you can just add definitions to definition.py inside the
 CUST_DEFINITIONS deictionary, and then you would define the corresponding
-funtions in custom.py. Looking over the given utility functions in custom.py
-and irclient.py should give you a clear picture of how to extend functionality.
+funtions in custom.py. Looking over the given utility functions in
+definitions.py and custom.py should give you a clear picture of how to extend
+functionality.
