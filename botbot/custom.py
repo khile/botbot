@@ -10,12 +10,12 @@ import time
 import traceback
 import urllib.request
 
-from bangs import BANG_DICT
-from conf import (DB_FILE,
-                  HELP_FILE,
-                  URL_SEARCH_LIMIT,
-                  USER_AGENT)
-from debug import debug
+from botbot.bangs import BANG_DICT
+from botbot.conf import (DB_FILE,
+                         HELP_FILE,
+                         URL_SEARCH_LIMIT,
+                         USER_AGENT)
+from botbot.debug import debug
 
 
 def list_help(r, line, bot, chan):

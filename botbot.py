@@ -8,20 +8,20 @@ import traceback
 
 from multiprocessing import Process
 
-from bot import Bot
-from conf import (CHANNEL,
-                  DEBUG,
-                  HOSTNAME,
-                  PING_INTERVAL,
-                  PORT,
-                  REALNAME,
-                  RETRY_INTERVAL,
-                  SERVER,
-                  SERVERNAME,
-                  USERNAME)
-from debug import debug
-from definitions import IRC_DEFINITIONS, CUST_DEFINITIONS
-from parser import Parser
+from botbot.bot import Bot
+from botbot.conf import (CHANNEL,
+                         DEBUG,
+                         HOSTNAME,
+                         PING_INTERVAL,
+                         PORT,
+                         REALNAME,
+                         RETRY_INTERVAL,
+                         SERVER,
+                         SERVERNAME,
+                         USERNAME)
+from botbot.debug import debug
+from botbot.definitions import IRC_DEFINITIONS, CUST_DEFINITIONS
+from botbot.parser import Parser
 
 
 B = None

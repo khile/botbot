@@ -3,7 +3,7 @@ import socket
 
 from multiprocessing import Process
 
-from debug import debug
+from botbot.debug import debug
 
 
 class Bot(object):

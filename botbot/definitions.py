@@ -1,13 +1,13 @@
 """Definitions for parsing lines"""
-from custom import (echo_tell,
-                    echo_urls,
-                    list_help,
-                    list_tell,
-                    tell,
-                    title_echo,
-                    url_search,
-                    query_engine)
-from irc import error, pong, netsplit
+from botbot.custom import (echo_tell,
+                           echo_urls,
+                           list_help,
+                           list_tell,
+                           tell,
+                           title_echo,
+                           url_search,
+                           query_engine)
+from botbot.irc import error, pong, netsplit
 
 
 CUST_DEFINITIONS = {

@@ -4,7 +4,7 @@ import time
 
 from multiprocessing import Process
 
-from conf import LOG_FILE
+from botbot.conf import LOG_FILE
 
 
 def log(msg):

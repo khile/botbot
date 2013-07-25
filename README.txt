@@ -5,7 +5,7 @@
 basic builtin IRC utility functions, but really excels in giving the user easy
 extensibility of the bots functionality.
 
-  To run the bot just modify the values in conf.py and run botbot.
+  To run the bot just modify the values in conf.py and run botbot.py.
 
   The client defaults to running in debug mode but you can disable it in the
 configuration file (conf.py).
