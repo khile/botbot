@@ -1,8 +1,3 @@
-# Client files
-*.sqlite
-*.log
-
-
 *.py[cod]
 
 # C extensions
