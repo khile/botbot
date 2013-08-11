@@ -69,7 +69,7 @@ def pinger(host):
         except:
             e = traceback.format_exc()
             debug(e)
-            pass
+            break
 
 def recover(args):
     """Recover from a fatal error"""
@@ -86,7 +86,6 @@ def recover(args):
             e = traceback.format_exc()
             debug(e)
             retry *= 2
-            pass
 
 def irc_parse(line):
     """Parse IRC protocol message such as PING, ERROR, NETSPLIT, etc."""
@@ -151,4 +150,3 @@ if __name__ == '__main__':
             debug(e)
             debug('\n\nFATAL ERROR\n\nAttempting recovery...')
             recover(args)
-            pass
