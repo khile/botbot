@@ -7,10 +7,14 @@ def pong(r, line, bot, chan):
 
 def netsplit(r, line, bot, chan):
     """Raise an exception on netsplit so the mainloop will catch it and restart
-    the client"""
+    the client
+
+    """
     raise Exception('Netsplit exception')
 
 def error(r, line, bot, chan):
     """Raise an exception on IRCD error so the mainloop will restart the
-    client"""
+    client
+
+    """
     raise Exception('IRCD Error "{}"'.format(line))

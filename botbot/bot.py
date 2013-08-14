@@ -12,7 +12,9 @@ class Bot(object):
     def __init__(self, host, port, debug=False):
         """Initialize the bot with host and port. Debig is an optional
         flag that enables all reads and write to be displayed to the
-        terminal."""
+        terminal.
+
+        """
         self._s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self._s.connect((host, port))
         self.debug = debug
