@@ -40,7 +40,7 @@ CUST_DEFINITIONS = {
         url_search
     ),
     'query': (
-        '^:(.+)!~?(.+)@(.+)\sPRIVMSG\s(.+)\s:!q\s(.+)$',
+        r'^:(.+)!~?(.+)@(.+)\sPRIVMSG\s(.+)\s:!q\s(.+)$',
         query_engine
     ),
 }
