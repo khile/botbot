@@ -1,5 +1,9 @@
 #!/usr/bin/env python
-"""botbot is a bot with customizable behavior."""
+"""
+                            _.:` botbot `:._
+
+This is a script which imports the botbot module and starts the botbot client
+"""
 import difflib
 import re
 import sys
