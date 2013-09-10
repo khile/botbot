@@ -63,7 +63,6 @@ def disconnect():
 
 def pinger(host):
     """Ping the IRC server at the given interval until a keyboard interrupt"""
-    # TODO: This will fail if the bot ever gets disconnected... we are using
     # multiprocessing not threading.
     while True:
         try:
@@ -84,6 +83,7 @@ def recover(args):
             disconnect()
             time.sleep(retry)
             connect(*args)
+            Process(target=pinger, args=(SERVER,)).start()
             break
         except KeyboardInterrupt:
             break
@@ -131,8 +131,6 @@ if __name__ == '__main__':
     # stay connected to the server even if the socket receives no pings. This
     # arises if the client side network is cleaning up tcp connections before
     # the server can ping the client.
-    # TODO: This needs to be called again if there's ever an exception besides
-    # KeyboardInterrupt.
     Process(target=pinger, args=(SERVER,)).start()
 
     # Loop until keyboard interrupt
