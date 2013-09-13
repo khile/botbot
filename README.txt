@@ -27,3 +27,26 @@ CUST_DEFINITIONS deictionary, and then you would define the corresponding
 funtions in custom.py. Looking over the given utility functions in
 definitions.py and custom.py should give you a clear picture of how to extend
 functionality.
+
+
+Source description:
+    bobot.py - IRC client
+    botbot/
+        bangs.py - duckduckgo search bangs
+        bot.py - handles socket I/O
+        conf.py - Global variables
+        custom.py - Custom event handlers
+        debug.py - Display and logging functions
+        definitions.py - Event definitions
+        irc.py - IRC event handlers
+        parser.py - Parser for socket data
+        data/
+            data.sqlite - Database used by custom.py
+            help.txt - Help manual
+            lstell.txt - lstell manual
+            q.txt - q manual
+            tell.txt - tell manual
+            urlq.txt - urlq manual
+            urls.txt - urls manual
+        logs/
+            log.log - Client log file
