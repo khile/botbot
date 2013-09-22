@@ -1,5 +1,5 @@
 
-                          botbot
+                           _.:` botbot `:._
 
   This is a Python 3 IRC client which uses multiprocessing. It comes with some
 basic builtin IRC utility functions, but really excels in giving the user easy
@@ -32,17 +32,17 @@ functionality.
 Source description:
     bobot.py - IRC client
     botbot/
-        bangs.py - duckduckgo search bangs
-        bot.py - handles socket I/O
+        bangs.py - DuckDuckGo search bangs
+        bot.py - Socket I/O abstraction
         conf.py - Global variables
         custom.py - Custom event handlers
-        debug.py - Display and logging functions
-        definitions.py - Event definitions
+        debug.py - Interface I/O functions
+        definitions.py - Event mappings
         irc.py - IRC event handlers
-        parser.py - Parser for socket data
+        parser.py - Parses messages for events
         data/
             data.sqlite - Database used by custom.py
-            help.txt - Help manual
+            help.txt - help manual
             lstell.txt - lstell manual
             q.txt - q manual
             tell.txt - tell manual
