@@ -1,6 +1,7 @@
 """Custom event handlers"""
 import gzip
 import html.parser as htmlp
+import http.cookiejar
 import io
 import os
 import re
@@ -68,9 +69,11 @@ def title_echo(r, line, bot, chan):
         conn.commit()
         conn.close()
 
-    # get url and build opener with custom user-agent
+    # get url and build opener with custom user-agent and cookies enabled
     url = r.group(5).split()[0]
-    opener = urllib.request.build_opener()
+    cookie_jar = http.cookiejar.CookieJar()
+    opener = urllib.request.build_opener(
+                urllib.request.HTTPCookieProcessor(cookie_jar))
     opener.addheaders = [('User-agent', USER_AGENT)]
 
     # open the url but only read a maximum of 2**20 bytes in case someone is
