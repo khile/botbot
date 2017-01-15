@@ -79,7 +79,7 @@ def title_echo(r, line, bot, chan):
     # open the url but only read a maximum of 2**20 bytes in case someone is
     # screwing with us
     try:
-        f = opener.open(url)
+        f = opener.open(str(url))
         html = f.read(1048576) # only read the first 2**20 bytes
     except:
         e = traceback.format_exc()
