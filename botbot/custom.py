@@ -1,6 +1,6 @@
 """Custom event handlers"""
 import gzip
-import html.parser as htmlp
+import html as htmlp
 import http.cookiejar
 import io
 import os
@@ -109,7 +109,7 @@ def title_echo(r, line, bot, chan):
         title = title.group(1).strip()
         title = title.replace('\n', '').replace('\r', '')
         title = ' '.join([w for w in title.split(' ') if w != ''])
-        title = htmlp.HTMLParser().unescape(title)
+        title = htmlp.unescape(title)
     else:
         write_url(None, url)
         return
